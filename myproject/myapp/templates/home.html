@@ -1,0 +1,82 @@
+
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Day</title>
+    
+     <link rel="stylesheet" href="{% static 'Hstyle.css'%}">
+     <style>
+        body{
+            background-image: url("{%static 'cofee pic.jpeg'%}");
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            background-attachment: fixed;
+        }
+        </style>
+    
+</head>
+<body>
+    <div class="it">
+        <h1>Coffee with Heaven</h1>
+        <ul>
+            <li><a style="text-decoration: none" href="{% url 'home' %}">Home |</a></li>
+            <li><a style="text-decoration: none" href="{% url 'about' %}">About |</a></li>
+            <li><a style="text-decoration: none" href="{% url 'menu' %}">Menu |</a></li>
+            <li><a style="text-decoration: none" href="{% url 'contact' %}">Contact</a></li>
+        </ul>
+    </div>
+    <center>
+    <div class="if">
+        <h1>Let's Begin After Coffee</h1>
+        </div>
+        <div classs="if">
+        <h2>Start your Day with Fresh Coffee.</h2>
+           <h2> Because Bad mornings  deserve a second chance.
+            Fresh coffee in the morning.</h2> 
+        </div>
+    </center>
+    <center>
+        <button>ORDER IT</button>
+        </center>
+   
+
+<!-- <body background="{%static 'coffee img.jpeg'%}">
+<body>
+    <div class="header">
+    <nav>
+        <h1>Coffee Heaven</h1>
+       <ul> 
+        <li><a style="text-decoration: none" href="{% url 'home' %}">Home |</a></li>
+        <li><a style="text-decoration: none" href="{% url 'about' %}">About |</a></li>
+        <li><a style="text-decoration: none" href="{% url 'menu' %}">Menu |</a></li>
+        <li><a style="text-decoration: none" href="{% url 'contact' %}">Contact</a></li>
+        
+    </nav>
+    
+    <div class="searchbar">
+        <input  type="text"placeholder="search">
+    </div>
+    <center>
+    <div class="wel">
+              <h1>Lets begin after Coffee</h1>
+    </div>
+    </center>
+    
+    <center>    
+    <div class="contact">
+        <h2>Contact Us</h2>
+        <p>+91 9876543210<p>
+         <p>coffeewithhappy@gmail.com</p>   
+    </div>
+    </center> -->
+    <!-- {% for i in det %}
+        <ul>
+            <li>{{i.name}}</li>
+            <li>{{i.password}}</li>
+        </ul>
+    {% endfor%} -->
+</body>
+</html>

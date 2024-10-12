@@ -1,0 +1,38 @@
+
+
+nav{
+    background-color:burlywood;
+    color:white;
+    padding:15px;
+}
+li,ul,h1{
+    display:inline;
+}
+ul{
+    margin-left:60%;
+    
+}
+li{
+    color:whitesmoke;
+    cursor: pointer;
+    font-size:large;
+}
+li:hover{
+    color:whitesmoke
+
+}
+input{
+    width: 60%;
+    padding: 15px;
+}
+.searchbar{
+    padding: 50px;
+    text-align: center;
+    
+}
+.wel{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+    background-repeat: no-repeat;
+}

@@ -1,0 +1,42 @@
+.it{
+    background-color: peru;
+    color:rgb(10, 11, 11);
+    padding:15px
+}
+li,ul,h1{
+    display:inline;
+}
+li{
+    cursor:pointer;
+}
+li:hover{
+    color: white;
+
+}
+/* div{
+    background-image: url('cofee pic.jpeg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}         */
+
+        
+        
+ul{
+    margin-left:450px;
+    font-size:larger;   
+}
+.if{
+    color:aliceblue;
+    margin-top:10px;
+    font-size: larger;
+}
+button{
+    width:120px;
+    padding: 10px;
+    font-family:Arial, Helvetica, sans-serif; 
+    color:gold;
+    font-size: large;
+    background-color:black;
+    
+}

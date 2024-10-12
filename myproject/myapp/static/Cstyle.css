@@ -1,0 +1,40 @@
+
+/* body{
+    background-color:black;
+    display:inline;
+}
+img{
+    width:40%;
+    height:10%;
+}
+
+
+div,h1{
+    color:aliceblue;
+    display: inline;
+}
+h1,form,input{
+    margin-left:70%;
+    /* margin-bottom:10%; */
+    /* display: inline;
+
+} */
+input,p{
+    padding:10px;
+    width:200px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: antiquewhite;
+}
+div{
+    display: inline;
+}
+img{
+    width:300px;
+    height:200px
+}
+/* div{
+border-style: solid;
+border-width: 60px;
+border-color:brown;
+background-color: black;
+color: antiquewhite; */

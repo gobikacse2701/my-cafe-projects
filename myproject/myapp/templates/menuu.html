@@ -1,0 +1,61 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <link rel="stylesheet" href="mstyle.css">
+    
+</head>
+<body>
+     <div>
+        <div class="BC">
+            <h2>Black Coffee</h2>
+            <img src="{% static 'bc2.jpeg'%}">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi natus porro corrupti amet maxime odit quisquam, velit laboriosam quaerat commodi!</p>
+            <button><a href="{% url 'order' %}">ORDER NOW</a></button><br>
+
+        <div class="FC">
+            <h2>Filter Coffee</h2>
+            <img src="{% static 'fc2.jpeg'%}">    
+            <p>Boosts Energy Levels,Rich Source Of Antioxidants,Enhanced Cognitive Function,Reduced Risk Of Type 2 Diabetes, Protection Against Neurological Disorders, Promotes Weight Management,Lower Risk Of Depression,Liver Health Benefits.</p>
+            <button><a href="{% url 'order' %}">ORDER NOW</a></button><br>
+        </div>
+        <div class="cc">
+            <h2>Cappacino</h2>
+            <img src="{% static 'cc3.jpeg'%}">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni enim minima asperiores reiciendis, est sit. Natus, cumque. Impedit, veniam tempora.</p>
+            <button><a href="{% url 'order' %}">ORDER NOW</a></button><br>
+        
+        </div>
+        <div class="esp">
+            <h2>Espresso</h2>
+            <img src="{% static 'espersooo.jpeg'%}">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa est adipisci et, saepe commodi consequatur vitae error veritatis delectus ipsa atque accusamus eos quidem ex quisquam sunt enim similique quas.</p>
+            <button><a href="{% url 'order' %}">ORDER NOW</a></button><br>
+            </div>
+            <div class="amer">
+                <h2>Americano</h2>
+                <img src="{% static 'americanooo.jpeg'%}">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa est adipisci et, saepe commodi consequatur vitae error veritatis delectus ipsa atque accusamus eos quidem ex quisquam sunt enim similique quas.</p>
+                <button><a href="{% url 'order' %}">ORDER NOW</a></button><br>
+                </div>   
+            </div>
+            <div class="mocha">
+                <h2>Mocha</h2>
+                <img src="{% static 'mocha.jpeg'%}">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa est adipisci et, saepe commodi consequatur vitae error veritatis delectus ipsa atque accusamus eos quidem ex quisquam sunt enim similique quas.</p>
+                <button><a href="{% url 'order' %}">ORDER NOW</a></button><br>
+                </div>  
+            </div>
+            <div class="machito">
+                <h2>Mochito</h2>
+                <img src="{% static 'machito.jpeg'%}">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa est adipisci et, saepe commodi consequatur vitae error veritatis delectus ipsa atque accusamus eos quidem ex quisquam sunt enim similique quas.</p>
+                <button><a href="{% url 'order' %}">ORDER NOW</a></button><br>
+                </div>           
+
+            </div>               
+</body>
+</html>

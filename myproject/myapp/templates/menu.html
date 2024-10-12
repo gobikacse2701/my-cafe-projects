@@ -1,0 +1,70 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <link rel="stylesheet" href="{% static 'mstyle.css'%}">
+    <style>
+        body{
+    
+    background-image: url("{% static 'coffee img.jpeg' %}");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+        </style>
+    
+</head>
+<body>
+     <div class="container">
+        <div >
+            <h2>Black Coffee</h2>
+            <img src="{% static 'BC1.jpeg'%}">
+            <p>Lorem ipsum dolor sit amet cot commodi!</p>
+            <button><a href="{% url 'oorder' %}">ORDER NOW</a></button><br>
+        </div>
+        <div >
+            <h2>Filter Coffee</h2>
+            <img src="{% static 'fc2.jpeg'%}">    
+            <p>Boosts Energy Levels Health Benefits.</p>
+            <button><a href="{% url 'oorder' %}">ORDER NOW</a></button><br>
+        </div>
+        <div >
+            <h2>Cappacino</h2>
+            <img src="{% static 'CC2.jpeg'%}">
+            <p>Lorem ipsum dolor sitniam tempora.</p>
+            <button><a href="{% url 'oorder' %}">ORDER NOW</a></button><br>
+        
+        </div>
+        <div >
+            <h2>Espresso</h2>
+            <img src="{% static 'espersooo.jpeg'%}">
+            <p>Lorem ipsum dolor sit amet consect.</p>
+            <button><a href="{% url 'oorder' %}">ORDER NOW</a></button><br>
+        </div>
+        <div>
+                <h2>Americano</h2>
+                <img src="{% static 'americanooo.jpeg'%}">
+                <p>Lorem ipsutus ipsa atqu.</p>
+                <button><a href="{% url 'oorder' %}">ORDER NOW</a></button><br>
+        </div>   
+            
+         <div >
+                <h2>Mocha</h2>
+                <img src="{% static 'mocha.jpeg'%}">
+                <p>Lorem ipsus delectus ipsaquas.</p>
+                <button><a href="{% url 'oorder' %}">ORDER NOW</a></button><br>
+         </div>  
+
+         <div>
+                <h2>Mochito</h2>
+                <img src="{% static 'machito.jpeg'%}">
+                <p>Lorem ipsum dolor sit  sunt enim similique quas.</p>
+                <button><a href="{% url 'oorder' %}">ORDER NOW</a></button><br>
+        </div>           
+
+    </div>               
+</body>
+</html>

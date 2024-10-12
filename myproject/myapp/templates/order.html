@@ -1,0 +1,85 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ordering</title>
+    <style>
+        body{
+    
+    background-image: url("{% static 'coffee img.jpeg' %}");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+    </style>
+
+</head>
+<body>
+    <form  method="post" action="{% url 'fun' %}">
+    {%csrf_token%}
+      <table>        
+            <tr>
+                <th>Coffee Name:</th>
+                <td><select id="coname2" name="coname" onchange="myfunction()">
+                    <optgroup label="coffee">
+                        <option value="Black Coffee">Black Coffee</option>
+                        <option value="Filter Coffee">Filter Coffee</option>
+                        <option value="Cappacino">Cappacino</option> 
+                        <option value="Americanno">Americanno</option>
+                        <option  value="Esperrsso">Esperrsso</option>
+                        <option  value="Mocha">Mocha</option>
+                        <option  value="Mochito">Mochito</option>
+                        </optgroup>
+                    </select></td>
+            </tr><br><br>
+            <tr>
+                <th>Name</th>
+                <td><input type="text" name="cname"></td>
+            </tr><br><br>
+            <tr>
+                <th>Email</th>
+                <td><input type="email" name="cmail" ></td>
+            </tr><br><br>
+            <tr>
+                <th>Quantity</th>
+                <td><input type="number" id="cquan1" name="cquan" oninput="myfunction()"></td>
+            </tr><br><br>
+            <tr>
+                <th>Contact No:</th>
+                <td><input type="text" name="phno" ></td>
+            </tr><br><br>
+            <tr>
+                <th>Total Cost</th>
+                <!-- <td><input type="number" name="cost" ></td> -->
+                <td><p id="cost"></p></td>
+            </tr><br>
+          </table>
+            <button type="submit" >ORDER</button>
+    </form>
+
+<script>
+    function myfunction(){
+        var coffee = document.getElementsById('coname1').value;
+        var quantity = document.getElementsById('cquan1').value;
+        var se;
+        switch (coffee){
+            case 'Cappacino':
+                se = 10;
+                break;
+            default:
+                se = 0;
+                break;
+        }
+        var result = quantity * se;
+
+        document.getElementById('cost').innerHTML = result;
+
+
+    }
+
+</script>
+     
+</body>
+</html>

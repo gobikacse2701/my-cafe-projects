@@ -1,0 +1,12 @@
+p{
+    color:whitesmoke;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* body{
+    background-color:chocolate;
+    background-image: url("{% static 'coffee img.jpeg'%}");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+} */

@@ -1,0 +1,46 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Hstyle.css">
+    <style>
+        body{
+            background-image: url("{% static'cofee pic.jpeg' %}");
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            background-attachment: fixed;
+        }
+        </style>
+    
+        
+</head>
+<body >
+   
+    <div class="it">
+        <h1>Coffee with Heaven</h1>
+        <ul>
+            <li><a style="text-decoration: none" href="{% url 'index' %}">Home |</a></li>
+            <li><a style="text-decoration: none" href="{% url 'about' %}">About |</a></li>
+            <li><a style="text-decoration: none" href="{% url 'menu' %}">Menu |</a></li>
+            <li><a style="text-decoration: none" href="{% url 'contact' %}">Contact</a></li>
+        </ul>
+    </div>
+    <center>
+    <div class="if">
+        <h1>Let's Begin After Coffee</h1>
+        </div>
+        <div classs="if">
+        <h2>Start your Day with Fresh Coffee.</h2>
+           <h2> Because Bad mornings  deserve a second chance.
+            Fresh coffee in the morning.</h2> 
+        </div>
+    </center>
+    <center>
+        <button><a href="{% url 'order' %}">ORDER IT</a></button>
+        </center>
+   
+</body>
+</html>
